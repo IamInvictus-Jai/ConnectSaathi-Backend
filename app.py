@@ -1,11 +1,9 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
 
 from os import environ
 from dotenv import load_dotenv; load_dotenv()
 
-from utils.dbHandler import MongoDB
 
 # Routes
 from routes.UserRoutes import user_router
